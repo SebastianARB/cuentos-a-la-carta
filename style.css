@@ -1,0 +1,190 @@
+html {
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* MENU DE NAVEGACION PRINCIPAL */
+nav {
+    background-color: #573939;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+nav li:hover {
+    background-color: #684d4d52;
+    cursor: pointer;
+}
+
+.iniciarsesion {
+    background-color: #a95eee;
+}
+
+.iniciarsesion:hover {
+    background-color: #c38ef5ad;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: aqua;
+    flex-grow: 1;
+  }
+
+@media screen and (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* INICIO DE SESION */
+  
+  .contenedor {
+
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+    border: solid 1px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+  
+  .registrarse {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .registrarse a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .registrarse a:hover {
+    text-decoration: underline;
+  }
+  
+
+  /* REGISTRAR USUARIO */
+
+/* Estilos generales */
+
+
+.contenedor {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo {
+  margin: 20px 0;
+  
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #0069d9;
+}
+
+/* Estilos del enlace para iniciar sesión */
+.iniciar-sesion {
+  margin-top: 20px;
+}
+
+.iniciar-sesion p {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.iniciar-sesion a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.iniciar-sesion a:hover {
+  text-decoration: underline;
+}
