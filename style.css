@@ -27,7 +27,6 @@ nav ul {
 
 nav li {
     flex-grow: 1;
-    padding: 10px;
 }
 
 nav li:hover {
@@ -48,8 +47,8 @@ nav a {
     justify-content: center;
     text-decoration: none;
     font-size: 25px;
+    padding: 10px;
     color: aqua;
-    flex-grow: 1;
   }
 
 @media screen and (max-width: 500px) {
