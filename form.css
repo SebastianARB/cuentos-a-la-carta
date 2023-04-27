@@ -1,0 +1,95 @@
+/* ESTILOS FORMULARIOS */
+
+.contenedor {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+.campo {
+    margin: 10px 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+form label {
+    display: block;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="password"] {
+    width: 91.5%;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 25px;
+}
+
+.campo input:hover {
+    box-shadow: 0 0 5px #502ea1;
+}
+
+/* BOTON DE INICIO DE SESION O DE REGISTRARSE */
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0069d9;
+}
+
+/* APARTADO DE REGISTRO EN INICIO DE SESION */
+.registrarse {
+    margin: 20px 0 40px 0;
+    text-align: center;
+}
+
+.registrarse a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.registrarse p{
+    margin: 0 10px 0 0;
+}
+
+.registrarse a:hover {
+    text-decoration: underline;
+}
+
+/* APARTADO DE INICIAR SESION DESDE REGISTRO*/
+.iniciar-sesion {
+    margin: 20px 0 40PX 0;
+    text-align: center;
+}
+
+.iniciar-sesion a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.iniciar-sesion p {
+    margin: 0 10px 0 0;
+}
+
+.iniciar-sesion a:hover {
+    text-decoration: underline;
+}
