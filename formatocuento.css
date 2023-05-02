@@ -1,0 +1,60 @@
+/* ESTRELLAS */
+form {
+    width: 250px;
+    margin: 0 auto;
+    height: 50px;
+  }
+  
+  form p {
+    text-align: center;
+  }
+  
+  form label {
+    font-size: 20px;
+    color: grey;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    margin: 10px;
+  }
+  
+  form label:hover,
+  form label:hover ~ label {
+    color: orange;
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+
+/* CUENTOS */
+
+
+  .cuento{
+    width: 90%;
+    max-width: 800px; /* por ejemplo */
+    margin: 55px auto;
+  }
+
+  .cuento form{
+    height:30px;
+  }
+  
+  .cuento h2{
+    text-align: center;
+    margin: 0;
+    height: 20px;
+  }
+  
+  .boxcuento{
+    border: solid;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
