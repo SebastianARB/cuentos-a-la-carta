@@ -11,7 +11,7 @@ form {
   
   form label {
     font-size: 20px;
-    color: grey;
+    color: #808080;
   }
   
   input[type="radio"] {
@@ -26,11 +26,11 @@ form {
   
   form label:hover,
   form label:hover ~ label {
-    color: orange;
+    color: #ffa500;
   }
   
   input[type="radio"]:checked ~ label {
-    color: orange;
+    color: #ffa500;
   }
 
 /* CUENTOS */
@@ -50,11 +50,13 @@ form {
     text-align: center;
     margin: 0;
     height: 20px;
+    color: #2C3E50;
   }
   
   .boxcuento{
     border: solid;
     padding: 10px;
     border-radius: 20px;
+    background-color: #8ccec1;
   }
   
