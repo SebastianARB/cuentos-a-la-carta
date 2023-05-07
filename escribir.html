@@ -1,57 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-          <nav class="navbar">
-            <ul class="menu-bar">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="cuentos.html">Cuentos</a></li>
-                <li class="iniciarsesion"><a  href="iniciosesion.html">Iniciar Sesión</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="escribircuento">
-        <form action="/generar-cuento/" method="POST">
-          <h2>Características del cuento</h2>
-          <label for="edad">Edad del lector:</label>
-          <input type="number" id="edad" name="edad" required min="1"  max="120"/><br />
+  <header>
+      <nav class="navbar">
+        <ul class="menu-bar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cuentos.html">Cuentos</a></li>
+          <li class="iniciarsesion"><a href="iniciosesion.html">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
+  </header>
+  <main class="escribircuento">
+    <form action="/generar-cuento/" method="POST">
+      <h2>Características del cuento</h2>
+      <label for="edad">Edad del lector:</label>
+      <input type="number" id="edad" name="edad" required min="1" max="120"> 
 
-          <label for="tipo">Tipo de cuento:</label>
-          <select id="tipo" name="tipo">
-            <option value="aventuras">Aventuras</option>
-            <option value="fantasia">Fantasía</option>
-            <option value="ciencia-ficcion">Ciencia ficción</option>
-            <option value="terror">Terror</option>
-            <option value="misterio">Misterio</option>
-            <option value="romance">Romance</option>
-          </select><br />
+      <label for="tipo">Tipo de cuento:</label>
+      <select id="tipo" name="tipo">
+        <option value="aventuras">Aventuras</option>
+        <option value="fantasia">Fantasía</option>
+        <option value="ciencia-ficcion">Ciencia ficción</option>
+        <option value="terror">Terror</option>
+        <option value="misterio">Misterio</option>
+        <option value="romance">Romance</option>
+      </select>
 
-          <label for="genero">Género literario:</label>
-          <select id="genero" name="genero">
-            <option value="poesia">Poesía</option>
-            <option value="novela">Novela</option>
-            <option value="drama">Drama</option>
-            <option value="cuento">Cuento</option>
-          </select><br />
+      <label for="genero">Género literario:</label>
+      <select id="genero" name="genero">
+        <option value="poesia">Poesía</option>
+        <option value="novela">Novela</option>
+        <option value="drama">Drama</option>
+        <option value="cuento">Cuento</option>
+      </select>
 
-          <label for="palabras">Cantidad de palabras:</label>
-          <input type="number" id="palabras" name="palabras" required  min="10" max=" "/><br />
-          <button type="submit">Generar cuento</button>
-        </form>
-        <div id="cuento-generado">
-          <!-- Aquí se mostrará el cuento generado por la inteligencia artificial -->
-        </div>
-      </main>
-      <footer>
+      <label for="palabras">Cantidad de palabras:</label>
+      <input type="number" id="palabras" name="palabras" required min="10" max="2000" >
+      <button type="submit">Generar cuento</button>
+    </form>
+    <div id="cuento-generado">
+      <!-- Aquí se mostrará el cuento generado por la inteligencia artificial -->
+    </div>
+  </main>
+  <footer>
 
-      </footer>
+  </footer>
 </body>
+
 </html>

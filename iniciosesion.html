@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="form.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
 </head>
+
 <body>
-    <header>
-      <nav class="navbar">
-        <ul class="menu-bar">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cuentos.html">Cuentos</a></li>
-            <li><a href="escribir.html">Escribir Cuento</a></li>
-          </ul>
-        </nav>
-      </header>     
-    <main>
-        <section class="login">
-          <div class="contenedor-form">
-            <h1 class="titulos-form">Iniciar sesión</h1>
-            <form class="form-log" action="" method="POST">
-              <div class="campo">
-                <label for="usuario">Usuario:</label>
-                <input type="text" id="usuario" name="usuario" required>
-              </div>
-              <div class="campo">
-                <label for="contrasena">Contraseña:</label>
-                <input type="password" id="contrasena" name="contrasena" required>
-              </div>
-              <div class="btn-iniciar">
-                <button type="submit">Iniciar sesión</button>
-              </div>
-            </form>
-            
-            <div class="registrarse">
-              <p>¿Aún no tienes una cuenta?</p>
-              <a href="registro.html">Regístrate aquí</a>
-            </div>
+  <header>
+    <nav class="navbar">
+      <ul class="menu-bar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cuentos.html">Cuentos</a></li>
+        <li><a href="escribir.html">Escribir Cuento</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="login">
+      <div class="contenedor-form">
+        <h1 class="titulos-form">Iniciar sesión</h1>
+        <form class="form-log" method="POST">
+          <div class="campo">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" required>
           </div>
-        </section>
-      </main>
-      
-    <footer></footer>
+          <div class="campo">
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+          </div>
+          <div class="btn-iniciar">
+            <button type="submit">Iniciar sesión</button>
+          </div>
+        </form>
+
+        <div class="registrarse">
+          <p>¿Aún no tienes una cuenta?</p>
+          <a href="registro.html">Regístrate aquí</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
 </body>
+
 </html>
