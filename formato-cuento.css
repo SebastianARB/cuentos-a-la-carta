@@ -1,35 +1,37 @@
 /* ESTRELLAS */
-form {
+.estrellas {
     width: 250px;
     margin: 0 auto;
     height: 50px;
   }
   
-  form p {
+  .estrellas p {
     text-align: center;
   }
-  
-  form label {
-    font-size: 20px;
-    color: #808080;
+
+  .estrellas label:hover,
+  .estrellas label:hover ~ label {
+    color: #ffa500;
   }
   
-  input[type="radio"] {
-    display: none;
+  .clasificacion  label {
+    font-size: 20px;
+    color: #808080;
   }
   
   .clasificacion {
     direction: rtl;
     unicode-bidi: bidi-override;
-    margin: 10px;
+    margin: 20px;
+    background-color: #ffffff9f;
+    border-radius: 25px;
+  }
+
+  .clasificacion input[type="radio"] {
+    display: none;
   }
   
-  form label:hover,
-  form label:hover ~ label {
-    color: #ffa500;
-  }
-  
-  input[type="radio"]:checked ~ label {
+  .clasificacion input[type="radio"]:checked ~ label {
     color: #ffa500;
   }
 
@@ -39,19 +41,22 @@ form {
   .cuento{
     width: 90%;
     max-width: 800px; /* por ejemplo */
-    margin: 55px auto;
+    margin: 25px auto;
   }
 
   .cuento form{
     height:30px;
   }
   
-  .cuento h2{
+  .cuento h2 {
     text-align: center;
     margin: 0;
     height: 20px;
-    color: #2C3E50;
+    color: #ffa500;
+    font-size: 33px;
+    -webkit-text-stroke: 1px black; /* para navegadores webkit como Chrome y Safari */
   }
+  
   
   .boxcuento{
     border: solid;

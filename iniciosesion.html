@@ -10,8 +10,8 @@
 </head>
 <body>
     <header>
-        <nav>
-          <ul class="menu">
+      <nav class="navbar">
+        <ul class="menu-bar">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="cuentos.html">Cuentos</a></li>
             <li><a href="escribir.html">Escribir Cuento</a></li>
@@ -20,9 +20,9 @@
       </header>     
     <main>
         <section class="login">
-          <div class="contenedor">
-            <h1>Iniciar sesión</h1>
-            <form action="" method="POST">
+          <div class="contenedor-form">
+            <h1 class="titulos-form">Iniciar sesión</h1>
+            <form class="form-log" action="" method="POST">
               <div class="campo">
                 <label for="usuario">Usuario:</label>
                 <input type="text" id="usuario" name="usuario" required>
@@ -31,7 +31,7 @@
                 <label for="contrasena">Contraseña:</label>
                 <input type="password" id="contrasena" name="contrasena" required>
               </div>
-              <div class="campo">
+              <div class="btn-iniciar">
                 <button type="submit">Iniciar sesión</button>
               </div>
             </form>

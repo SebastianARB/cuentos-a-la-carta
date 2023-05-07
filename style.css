@@ -1,201 +1,200 @@
 html {
-    -webkit-scroll-behavior: smooth;
-    scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
-  }
-  
+  -webkit-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+}
+
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FFFFFF;
-    color: #555555;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(Castillo-fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFFFFF;
+  color: #555555;
 }
+
 /* MENU DE NAVEGACION PRINCIPAL */
-nav {
-    background-color:  #2980B9;
-    text-align: center;
+.navbar {
+  background-color: #2980B9;
+  text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
+.menu-bar {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 
-nav li {
-    flex-grow: 1;
+.menu-bar li {
+  flex-grow: 1;
 }
 
-nav li:hover {
-    background-color: #684d4d52;
-    cursor: pointer;
+.menu-bar li:hover {
+  background-color: #684d4d52;
+  cursor: pointer;
 }
 
 .iniciarsesion {
-    background-color: #FF6348;
+  background-color: #FF6348;
 }
 
 .iniciarsesion:hover {
-    background-color: #684d4d52;
+  background-color: #684d4d52;
 }
 
-nav a {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 25px;
-    padding: 10px;
-    color:  #ffff;
-    border:solid 1px;
-  }
+.menu-bar a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  color: #ffff;
+  border: solid 1px;
+}
 
 @media screen and (max-width: 500px) {
-    nav ul {
-        flex-direction: column;
-    }
+  nav ul {
+    flex-direction: column;
+  }
 }
 
 /* INICIO */
-.explicacioninicio{
-    border: solid;
-    width: 90%;
-    max-width: 800px; /* por ejemplo */
-    margin: 0 auto;
-    padding: 5px;
-    margin-top: 10px;
-    border-radius: 25px;
+
+.explicacion-inicio h1 {
+  text-align: center;
+}
+
+.explicacion-inicio {
+  border: solid;
+  width: 90%;
+  max-width: 800px;
+  /* por ejemplo */
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 10px;
+  border-radius: 25px;
+  background-color: #8ccec1;
 }
 
 /* CREAR CUENTO ESTILOS */
 /* Estilos para el formulario */
 .escribircuento form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.escribircuento h2{
+  font-size: 35px;
+  text-align: center;
+  color: #ffa500;
+  -webkit-text-stroke: 1px black; /* para navegadores webkit como Chrome y Safari */
+
+}
+
 .escribircuento label {
-    font-size: 18px;
-  }
-  
-  .escribircuento input[type="text"],
-  .escribircuento input[type="number"],
-  .escribircuento select {
-    padding: 10px;
-    margin: 10px;
-    font-size: 16px;
-    border-radius: 25px;
-    width: 100%;
-    border: 1px solid black;
-    max-width: 500px;
-    text-align: center;
-  }  
+  font-size: 30px;
+  color: #ffa500;
+  -webkit-text-stroke: 1px black; /* para navegadores webkit como Chrome y Safari */
+}
 
-  .escribircuento input[type="number"]{
-    min-width: 353px;
-    max-width: 478px;
-    margin: 10px;
-  }
-  
+.escribircuento input[type="text"],
+.escribircuento input[type="number"],
+.escribircuento select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+  border: 1px solid black;
+  max-width: 500px;
+  text-align: center;
+}
+
+.escribircuento input[type="number"] {
+  min-width: 353px;
+  max-width: 478px;
+  margin: 10px;
+}
+
 .escribircuento button[type="submit"] {
-    padding: 10px;
-    margin: 20px 10px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    background-color: #2980B9;
-    border: black 1px solid;
-    color: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
+  padding: 10px;
+  margin: 20px 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2980B9;
+  border: black 1px solid;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
 .escribircuento button[type="submit"]:hover {
-    background-color: #1C639E;
-  }
-  
-  /* Estilos para la sección de vista previa del cuento */
-#preview {
-    margin-top: 50px;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 80%;
-    max-width: 500px;
-    height: 400px;
-    overflow-y: auto;
-  }
-  
-  #preview h3 {
-    font-size: 24px;
-    margin-top: 0;
-  }
-  
-  #preview p {
-    font-size: 18px;
-    line-height: 1.5;
-  }
-  
-  #preview hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: none;
-    border-top: 1px solid #ccc;
+  background-color: #1C639E;
+}
+
+/* Estilos para la sección de vista previa del cuento */
+
+#cuento-generado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  min-height: 200px;
+  margin: auto;
+  margin-bottom: 25px;
+  font-size: 24px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  text-align: center;
+  border: black 1px solid;
+  border-radius: 25px;
+  background-color: #FFFFFF;
+}
+
+#cuento-generado p {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+#cuento-generado:after {
+  content: "";
+  /* crear un pseudo-elemento después del contenido para calcular el número de palabras */
+  visibility: hidden;
+}
+
+#cuento-generado[data-word-count]:after {
+  content: attr(data-word-count);
+  /* establecer el contenido del pseudo-elemento como el número de palabras */
+}
+
+/* estilos opcionales para los distintos tamaños de fuente según el número de palabras */
+@media (min-width: 768px) {
+  #cuento-generado[data-word-count="0"] {
+    font-size: 1rem;
   }
 
+  #cuento-generado[data-word-count="50"] {
+    font-size: 1.25rem;
+  }
 
-  #cuento-generado {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80%;
-    min-height: 200px;
-    margin: auto;
-    font-size: 24px;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    text-align: center;
-    border: black 1px solid;
-    border-radius: 25px;
+  #cuento-generado[data-word-count="100"] {
+    font-size: 1.5rem;
   }
-  
-  #cuento-generado p {
-    max-width: 100%;
-    overflow: hidden;
+
+  #cuento-generado[data-word-count="150"] {
+    font-size: 1.75rem;
   }
-  
-  
-    
-    #cuento-generado:after {
-        content: ""; /* crear un pseudo-elemento después del contenido para calcular el número de palabras */
-        visibility: hidden;
-      }
-      
-      #cuento-generado[data-word-count]:after {
-        content: attr(data-word-count); /* establecer el contenido del pseudo-elemento como el número de palabras */
-      }
-      
-      /* estilos opcionales para los distintos tamaños de fuente según el número de palabras */
-      @media (min-width: 768px) {
-        #cuento-generado[data-word-count="0"] {
-          font-size: 1rem;
-        }
-        #cuento-generado[data-word-count="50"] {
-          font-size: 1.25rem;
-        }
-        #cuento-generado[data-word-count="100"] {
-          font-size: 1.5rem;
-        }
-        #cuento-generado[data-word-count="150"] {
-          font-size: 1.75rem;
-        }
-        #cuento-generado[data-word-count="200"] {
-          font-size: 2rem;
-        }
-      }
+
+  #cuento-generado[data-word-count="200"] {
+    font-size: 2rem;
+  }
+}

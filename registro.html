@@ -12,19 +12,19 @@
 
 <body>
   <header>
-    <nav>
-      <ul class="menu">
+    <nav class="navbar">
+      <ul class="menu-bar">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="cuentos.html">Cuentos</a></li>
-        <li><a href="escribir.html">Escribir Cuento</a></li>
+        <li class="iniciarsesion"><a  href="iniciosesion.html">Iniciar Sesión</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section class="registro">
-      <div class="contenedor">
-        <h1>Registro</h1>
-        <form action="" method="POST">
+      <div class="contenedor-form">
+        <h1 class="titulos-form">Registro</h1>
+        <form class="form-reg" action="" method="POST">
           <div class="campo">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -45,7 +45,11 @@
             <label for="confirmar-contrasena">Confirmar contraseña:</label>
             <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
           </div>
+
+          <div class="btn-registrarse">
           <button type="submit">Registrarse</button>
+        </div>
+
         </form>
         <div class="iniciar-sesion">
           <p>¿Ya tienes una cuenta?</p>

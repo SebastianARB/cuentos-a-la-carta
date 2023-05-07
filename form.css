@@ -1,34 +1,39 @@
 /* ESTILOS FORMULARIOS */
 
-.contenedor {
+.contenedor-form {
     border: 2px solid #ccc;
     border-radius: 10px;
     max-width: 250px;
     margin: 0 auto;
     padding: 0 40px;
     margin-top: 35px;
+    background-color: #fff;
 }
 .campo {
     margin: 10px 0;
 }
 
-h1 {
+.titulos-form {
     text-align: center;
     font-size: 36px;
     margin: 10px 0 0 0;
     color: #2C3E50;
 }
 
-form label {
+.form-log, .form-reg label {
     display: block;
     text-align: center;
     margin-bottom: 0px;
 }
 
-form input[type="text"],
-form input[type="number"],
-form input[type="email"],
-form input[type="password"] {
+.form-reg input[type="text"],
+.form-reg input[type="number"],
+.form-reg input[type="email"],
+.form-reg input[type="password"], 
+.form-log input[type="text"],
+.form-log input[type="number"],
+.form-log input[type="email"],
+.form-log input[type="password"] {
     width: 91.5%;
     padding: 10px;
     border: solid 1px;
@@ -41,7 +46,8 @@ form input[type="password"] {
 
 /* BOTON DE INICIO DE SESION O DE REGISTRARSE */
 
-button[type="submit"] {
+.btn-iniciar button[type="submit"],
+.btn-registrarse button[type="submit"] {
     display: block;
     width: 100%;
     padding: 10px;
@@ -52,7 +58,8 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
+.btn-iniciar button[type="submit"]:hover,
+.btn-registrarse button[type="submit"]:hover {
     background-color: #0069d9;
 }
 
