@@ -23,7 +23,7 @@
     <form action="/generar-cuento/" method="POST">
       <h2>Características del cuento</h2>
       <label for="edad">Edad del lector:</label>
-      <input type="number" id="edad" name="edad" required min="1" max="120">
+      <input type="number" id="edad" name="edad" required min="1" max="120" placeholder="Ingrese su edad">
 
       <label for="tipo">Tipo de cuento:</label>
       <select id="tipo" name="tipo">
@@ -44,7 +44,7 @@
       </select>
 
       <label for="palabras">Cantidad de palabras:</label>
-      <input type="number" id="palabras" name="palabras" required min="10" max="2000">
+      <input type="number" id="palabras" name="palabras" required min="10" max="2000" placeholder="Ingrese cantidad de palabras del texto">
       <button type="submit">Generar cuento</button>
     </form>
     <section id="cuento-generado">
