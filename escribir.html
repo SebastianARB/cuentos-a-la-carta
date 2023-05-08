@@ -11,19 +11,19 @@
 
 <body>
   <header>
-      <nav class="navbar">
-        <ul class="menu-bar">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="cuentos.html">Cuentos</a></li>
-          <li class="iniciarsesion"><a href="iniciosesion.html">Iniciar Sesión</a></li>
-        </ul>
-      </nav>
+    <nav class="navbar">
+      <ul class="menu-bar">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cuentos.html">Cuentos</a></li>
+        <li class="iniciarsesion"><a href="iniciosesion.html">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
   </header>
   <main class="escribircuento">
     <form action="/generar-cuento/" method="POST">
       <h2>Características del cuento</h2>
       <label for="edad">Edad del lector:</label>
-      <input type="number" id="edad" name="edad" required min="1" max="120"> 
+      <input type="number" id="edad" name="edad" required min="1" max="120">
 
       <label for="tipo">Tipo de cuento:</label>
       <select id="tipo" name="tipo">
@@ -37,19 +37,31 @@
 
       <label for="genero">Género literario:</label>
       <select id="genero" name="genero">
-        <option value="poesia">Poesía</option>
-        <option value="novela">Novela</option>
-        <option value="drama">Drama</option>
         <option value="cuento">Cuento</option>
+        <option value="novela">Novela</option>
+        <option value="poesia">Poesía</option>
+        <option value="drama">Drama</option>
       </select>
 
       <label for="palabras">Cantidad de palabras:</label>
-      <input type="number" id="palabras" name="palabras" required min="10" max="2000" >
+      <input type="number" id="palabras" name="palabras" required min="10" max="2000">
       <button type="submit">Generar cuento</button>
     </form>
-    <div id="cuento-generado">
+    <section id="cuento-generado">
+      <p> La abeja trabajo todo el dia recolectando néctar mas dulce y flores mas
+        bellas para hacer su miel. </p>
+      <p>Cansada pero feliz, regreso a la colmena y deposito
+        su tesoro en la celda mas cercana.
+        Allí, junto a sus hermanas, trabajo duro para
+        convertirlo en el manjar mas delicioso y nutritivo que pudiera existir.</p>
+      <p>Cuando
+        la miel estuvo lista, la abeja sintió una gran satisfacción al ver como su esfuerzo
+        se había convertido en algo valioso para la comunidad.
+        Y asi, feliz satisfecha,
+        se fue a dormir sabiendo que su miel alimentaria a la colmena y a otros animales
+        de la naturaleza.</p>
       <!-- Aquí se mostrará el cuento generado por la inteligencia artificial -->
-    </div>
+    </section>
   </main>
   <footer>
 

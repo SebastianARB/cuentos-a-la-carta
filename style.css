@@ -1,18 +1,14 @@
 html {
-  -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
-  font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
 
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url(imagenes/Castillo-fondo.jpg);
-  background-repeat: repeat;
+  background: #FFFFFF url(imagenes/Castillo-fondo.jpg) repeat;
   background-size: cover;
-  background-color: #FFFFFF;
   color: #555555;
 }
 
@@ -23,11 +19,11 @@ body {
 }
 
 .menu-bar {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .menu-bar li {
@@ -35,7 +31,7 @@ body {
 }
 
 .menu-bar li:hover {
-  background-color: #684d4d52;
+  background-color: rgba(104, 77, 77, 0.32);
   cursor: pointer;
 }
 
@@ -44,36 +40,32 @@ body {
 }
 
 .iniciarsesion:hover {
-  background-color: #684d4d52;
+  background-color: rgba(104, 77, 77, 0.32);
 }
 
 .menu-bar a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
+  color: #fff;
+  display: block;
   font-size: 25px;
   padding: 10px;
-  color: #ffff;
-  border: solid 1px;
+  text-decoration: none;
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 500px) {
-  nav ul {
+  .menu-bar {
     flex-direction: column;
   }
 }
 
-/* INICIO */
 
-.explicacion-inicio h1 {
-  text-align: center;
-}
+
+/* INICIO */
 
 .explicacion-inicio {
   border: solid;
   width: 90%;
   max-width: 800px;
-  /* por ejemplo */
   margin: 0 auto;
   padding: 30px;
   margin-top: 10px;
@@ -81,8 +73,11 @@ body {
   background-color: #8ccec1;
 }
 
-/* CREAR CUENTO ESTILOS */
-/* Estilos para el formulario */
+.explicacion-inicio h1 {
+  text-align: center;
+}
+
+/* Estilos para el formulario de crear cuento */
 .escribircuento form {
   display: flex;
   flex-direction: column;
@@ -91,50 +86,49 @@ body {
   margin-top: 10px;
 }
 
-.escribircuento h2{
-  font-size: 35px;
+.escribircuento h2 {
+  font-size: 2.1875rem;
   text-align: center;
   color: #ffa500;
-  -webkit-text-stroke: 1px black; /* para navegadores webkit como Chrome y Safari */
-
+  text-shadow: 1px 1px 0 black;
 }
 
 .escribircuento label {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #ffa500;
-  -webkit-text-stroke: 1px black; /* para navegadores webkit como Chrome y Safari */
+  text-shadow: 1px 1px 0 black;
 }
 
 .escribircuento input[type="text"],
 .escribircuento input[type="number"],
-.escribircuento select {
-  padding: 10px;
-  margin: 10px;
-  font-size: 16px;
-  border-radius: 25px;
+.escribircuento select,
+.escribircuento textarea {
+  padding: 0.625rem;
+  margin: 0.625rem;
+  font-size: 1rem;
+  border-radius: 1.5625rem;
   width: 100%;
   border: 1px solid black;
-  max-width: 500px;
+  max-width: 31.25rem;
   text-align: center;
 }
 
 .escribircuento input[type="number"] {
-  min-width: 353px;
-  max-width: 478px;
-  margin: 10px;
+  min-width: 22.0625rem;
+  max-width: 29.875rem;
+  margin: 0.625rem;
 }
 
 .escribircuento button[type="submit"] {
-  padding: 10px;
-  margin: 20px 10px;
-  font-size: 18px;
+  padding: 0.625rem;
+  margin: 1.25rem 0.625rem;
+  font-size: 1.125rem;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   background-color: #2980B9;
-  border: black 1px solid;
+  border: 1px solid black;
   color: white;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 .escribircuento button[type="submit"]:hover {
@@ -143,21 +137,20 @@ body {
 
 /* Estilos para la sección de vista previa del cuento */
 
+
 #cuento-generado {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 80%;
   min-height: 200px;
-  margin: auto;
-  margin-bottom: 25px;
+  margin: 25px auto 0;
+  padding: 10px;
   font-size: 24px;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  line-height: 1.5;
   text-align: center;
-  border: black 1px solid;
+  border: 1px solid black;
   border-radius: 25px;
-  background-color: #FFFFFF;
+  background-color: #FFF;
+  overflow-wrap: break-word;
+  margin-bottom: 100px;
 }
 
 #cuento-generado p {
@@ -165,18 +158,11 @@ body {
   overflow: hidden;
 }
 
-#cuento-generado:after {
-  content: "";
-  /* crear un pseudo-elemento después del contenido para calcular el número de palabras */
+#cuento-generado::after {
+  content: attr(data-word-count);
   visibility: hidden;
 }
 
-#cuento-generado[data-word-count]:after {
-  content: attr(data-word-count);
-  /* establecer el contenido del pseudo-elemento como el número de palabras */
-}
-
-/* estilos opcionales para los distintos tamaños de fuente según el número de palabras */
 @media (min-width: 768px) {
   #cuento-generado[data-word-count="0"] {
     font-size: 1rem;
@@ -198,3 +184,65 @@ body {
     font-size: 2rem;
   }
 }
+
+
+/* PERFIL PARAMETROS */
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 10% auto;
+  padding: 20px;
+  max-width: 350px;
+  background-color: #ffffffc2;
+  border-radius: 15%;
+}
+
+.imagen-perfil {
+  width: 50%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+
+.name-user {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.email-user, .fecha-user {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.btn-cerrar-sesion {
+  display: inline-block;
+  background-color: #2980B9;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.btn-cerrar-sesion:hover {
+  background-color: #154360;
+}
+
+@media screen and (max-width: 768px) {
+  .perfil {
+    margin: 5%;
+  }
+
+  .imagen-perfil {
+    width: 70%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
