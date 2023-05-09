@@ -7,14 +7,16 @@
   text-align: center;
 }
 
-.estrellas label:hover,
-.estrellas label:hover~label {
-  color: #ffa500;
-}
-
 .clasificacion label {
   font-size: 20px;
   color: #808080;
+  cursor: pointer;
+}
+
+.clasificacion label:hover,
+.clasificacion label:hover ~ label,
+.clasificacion input[type="radio"]:checked ~ label {
+  color: #ffa500;
 }
 
 .clasificacion {

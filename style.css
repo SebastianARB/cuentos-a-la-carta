@@ -31,7 +31,7 @@ body {
 }
 
 .menu-bar li:hover {
-  background-color: rgba(104, 77, 77, 0.32);
+  background-color: #684d4d52;
   cursor: pointer;
 }
 
@@ -65,9 +65,9 @@ body {
 .explicacion-inicio {
   border: solid;
   width: 90%;
-  max-width: 800px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 15px;
   margin-top: 10px;
   border-radius: 25px;
   background-color: #8ccec1;
@@ -83,7 +83,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .escribircuento h2 {
@@ -194,12 +194,17 @@ body {
   justify-content: center;
   font-family: Arial, sans-serif;
   text-align: center;
-  margin: 10% auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 20px;
   max-width: 350px;
   background-color: #ffffffc2;
   border-radius: 15%;
 }
+
+
 
 .imagen-perfil {
   width: 50%;
