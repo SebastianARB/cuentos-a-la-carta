@@ -119,6 +119,11 @@ body {
   margin: 0.625rem;
 }
 
+.escribircuento select:hover,
+.escribircuento input:hover {
+  border: 2px solid #81c700;
+}
+
 .escribircuento button[type="submit"] {
   padding: 0.625rem;
   margin: 1.25rem 0.625rem;
@@ -133,6 +138,7 @@ body {
 
 .escribircuento button[type="submit"]:hover {
   background-color: #1C639E;
+  border: 1px solid #81c700;
 }
 
 /* Estilos para la sección de vista previa del cuento */

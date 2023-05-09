@@ -27,6 +27,10 @@
   border-radius: 25px;
 }
 
+.clasificacion:hover{
+  border: solid 1px #ffa500;
+}
+
 .clasificacion input[type="radio"] {
   display: none;
 }
