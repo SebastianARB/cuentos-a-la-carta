@@ -50,6 +50,7 @@ body {
   padding: 10px;
   text-decoration: none;
   border: 1px solid black;
+  border-right: 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -87,11 +88,13 @@ body {
 }
 
 .escribircuento h2 {
-  font-size: 2.1875rem;
+  font-size: 30px;
   text-align: center;
   color: #ffa500;
   text-shadow: 1px 1px 0 black;
+  word-wrap: break-word;
 }
+
 
 .escribircuento label {
   font-size: 1.875rem;
@@ -102,31 +105,37 @@ body {
 .escribircuento input[type="text"],
 .escribircuento input[type="number"],
 .escribircuento select,
-.escribircuento textarea {
+.escribircuento textarea
+ {
   padding: 0.625rem;
   margin: 0.625rem;
   font-size: 1rem;
   border-radius: 1.5625rem;
   width: 100%;
   border: 1px solid black;
-  max-width: 31.25rem;
+  max-width: 30rem;
   text-align: center;
+  align-items: center;
+}
+.escribircuento #edad,
+.escribircuento #palabras {
+  margin-left: 0;
+  margin-right: 0;
+  width: 89.6%;
+  max-width: 28.5rem;
 }
 
-.escribircuento input[type="number"] {
-  min-width: 22.0625rem;
-  max-width: 29.875rem;
-  margin: 0.625rem;
-}
 
 .escribircuento select:hover,
-.escribircuento input:hover {
-  border: 2px solid #81c700;
+.escribircuento input:hover,
+#contexto:hover,
+#prompt:hover {
+  box-shadow: 0 0 5px #81c700;
 }
 
 .escribircuento button[type="submit"] {
   padding: 0.625rem;
-  margin: 1.25rem 0.625rem;
+
   font-size: 1.125rem;
   border: none;
   border-radius: 0.3125rem;
@@ -138,8 +147,75 @@ body {
 
 .escribircuento button[type="submit"]:hover {
   background-color: #1C639E;
-  border: 1px solid #81c700;
+  box-shadow: 0 0 8px #81c700;
 }
+
+
+#contexto {
+  resize: none;
+  font-size: 25px;
+  padding: 20px;
+  border-radius:5px ;
+  width: 75%;
+  max-width: 28.5rem;
+}
+
+#contexto::-webkit-scrollbar {
+  width: 10px;
+}
+
+#contexto::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+#contexto::-webkit-scrollbar-thumb {
+  background-color: #81c700;
+  border-radius: 5px;
+}
+
+#contexto::-webkit-scrollbar-thumb:hover {
+  background-color: #81c70083;
+}
+
+
+#prompt,
+.prompt {
+  resize: none;
+  font-size: 25px;
+  padding: 20px;
+  border-radius:5px ;
+  width: 75%;
+  max-width: 28.5rem;
+  text-align: center;
+  margin: 5px;
+  /* display: none;  */
+  /* al comentar esta linea se muestra el prompt */
+}
+
+#prompt::-webkit-scrollbar {
+  width: 10px;
+}
+
+#prompt::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+#prompt::-webkit-scrollbar-thumb {
+  background-color: #81c700;
+  border-radius: 5px;
+}
+
+#prompt::-webkit-scrollbar-thumb:hover {
+  background-color: #81c70083;
+}
+
+
+
+
+
+
+
+
 
 /* Estilos para la sección de vista previa del cuento */
 
