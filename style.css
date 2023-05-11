@@ -333,3 +333,19 @@ body {
   }
 }
 
+/* FOOTER */
+#page-wrapper {
+  min-height: calc(100vh - 100px); /* 100px es la altura del pie de página */
+}
+#footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
