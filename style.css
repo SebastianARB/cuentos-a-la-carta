@@ -41,13 +41,14 @@ body {
 }
 
 /* BOTON DE INICIAR SESION */
-.iniciarsesion {
+.iniciarsesion, .registrarse-menu {
   background-color: #ff6348;
 }
 
 /* HOVER DE BOTON DE INICIAR SESION */
 
-.iniciarsesion:hover {
+.iniciarsesion:hover,
+, .registrarse-menu:hover {
   background-color: rgba(104, 77, 77, 0.32);
 }
 
@@ -139,16 +140,38 @@ body {
 }
 
 /* FOOTER */
-footer{
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  }
+  
+  .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  footer nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  }
+  
+  footer nav li {
+  margin: 0 10px;
+  }
+  
+  footer nav a {
+  color: #fff;
+  text-decoration: none;
+  }
+  
+  .footer-bottom {
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
   text-align: center;
-  background-color: #555555;
-  color: #ffffff;
-  height: 50px;
-  padding: 5px;
-  margin-top: 50px;
-}
-
-footer a{
-  font-size: 20px;
-  color: #2980b9;
-}
+  }
