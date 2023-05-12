@@ -1,84 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escribir cuento</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Escribir cuento</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="form.css">
-  
-</head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="menu-bar">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="cuentos.html">Cuentos</a></li>
+          <li class="iniciarsesion">
+            <a href="iniciosesion.html">Iniciar Sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
+    <main class="escribircuento">
+      <form action="/generar-cuento/" method="POST">
+        <h2>Propiedades del cuento</h2>
+        <label for="edad">Edad del lector:</label>
+        <input
+          type="number"
+          id="edad"
+          name="edad"
+          required
+          min="1"
+          max="120"
+          placeholder="Ingrese su edad"
+        />
 
-  <header>
-    <nav class="navbar">
-      <ul class="menu-bar">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="cuentos.html">Cuentos</a></li>
-        <li class="iniciarsesion"><a href="iniciosesion.html">Iniciar Sesión</a></li>
-      </ul>
-    </nav>
-  </header>
+        <label for="tipo">Tipo de cuento:</label>
+        <select id="tipo" name="tipo">
+          <option value="aventuras">Aventuras</option>
+          <option value="fantasia">Fantasía</option>
+          <option value="ciencia-ficcion">Ciencia ficción</option>
+          <option value="terror">Terror</option>
+          <option value="misterio">Misterio</option>
+          <option value="romance">Romance</option>
+        </select>
 
-  <main class="escribircuento" ">
-    <form action="/generar-cuento/" method="POST">
-      <h2>Propiedades del cuento</h2>
-      <label for="edad">Edad del lector:</label>
-      <input type="number" id="edad" name="edad" required min="1" max="120" placeholder="Ingrese su edad">
+        <label for="genero">Género literario:</label>
+        <select id="genero" name="genero">
+          <option value="cuento">Cuento</option>
+          <option value="novela">Novela</option>
+          <option value="poesia">Poesía</option>
+          <option value="drama">Drama</option>
+        </select>
 
-      <label for="tipo">Tipo de cuento:</label>
-      <select id="tipo" name="tipo">
-        <option value="aventuras">Aventuras</option>
-        <option value="fantasia">Fantasía</option>
-        <option value="ciencia-ficcion">Ciencia ficción</option>
-        <option value="terror">Terror</option>
-        <option value="misterio">Misterio</option>
-        <option value="romance">Romance</option>
-      </select>
+        <label for="palabras">Cantidad de palabras:</label>
+        <input
+          type="number"
+          id="palabras"
+          name="palabras"
+          required
+          min="10"
+          max="2000"
+          placeholder="Ingrese cantidad de palabras del texto"
+        />
 
-      <label for="genero">Género literario:</label>
-      <select id="genero" name="genero">
-        <option value="cuento">Cuento</option>
-        <option value="novela">Novela</option>
-        <option value="poesia">Poesía</option>
-        <option value="drama">Drama</option>
-      </select>
+        <label for="contexto">Contexto:</label>
+        <textarea
+          rows="4"
+          cols="50"
+          name="contexto"
+          id="contexto"
+          style="resize: none"
+          placeholder="Ingrese el contexto, personajes, lugar, etc."
+        ></textarea>
 
-      <label for="palabras">Cantidad de palabras:</label>
-      <input type="number" id="palabras" name="palabras" required min="10" max="2000" placeholder="Ingrese cantidad de palabras del texto">
-      
-      <label for="contexto">Contexto:</label>
-      <textarea rows="4" cols="50" name="contexto" id="contexto" style="resize:none;" placeholder="Ingrese el contexto, personajes, lugar, etc."></textarea>
+        <label class="prompt" for="prompt">prompt:</label>
+        <textarea
+          rows="4"
+          cols="50"
+          name="prompt"
+          id="prompt"
+          style="resize: none"
+          placeholder="Prueba para ruben... esto hay que eliminarlo despues"
+        ></textarea>
 
-      <label  class="prompt" for="prompt">prompt:</label>
-      <textarea rows="4" cols="50" name="prompt" id="prompt" style="resize:none;" placeholder="Prueba para ruben... esto hay que eliminarlo despues"></textarea>
+        <button type="submit">Generar cuento</button>
+      </form>
+      <section id="cuento-generado">
+        <h3>La abeja y su miel.</h3>
+        <p>
+          La abeja trabajo todo el dia recolectando néctar mas dulce y flores
+          mas bellas para hacer su miel.
+        </p>
+        <p>
+          Cansada pero feliz, regreso a la colmena y deposito su tesoro en la
+          celda mas cercana. Allí, junto a sus hermanas, trabajo duro para
+          convertirlo en el manjar mas delicioso y nutritivo que pudiera
+          existir.
+        </p>
+        <p>
+          Cuando la miel estuvo lista, la abeja sintió una gran satisfacción al
+          ver como su esfuerzo se había convertido en algo valioso para la
+          comunidad. Y asi, feliz satisfecha, se fue a dormir sabiendo que su
+          miel alimentaria a la colmena y a otros animales de la naturaleza.
+        </p>
+      </section>
+    </main>
 
-      <button type="submit">Generar cuento</button>
-    </form>
-    <section id="cuento-generado">
-      <h3> La abeja y su miel.</h3>
-      <p> La abeja trabajo todo el dia recolectando néctar mas dulce y flores mas
-        bellas para hacer su miel. </p>
-      <p>Cansada pero feliz, regreso a la colmena y deposito
-        su tesoro en la celda mas cercana.
-        Allí, junto a sus hermanas, trabajo duro para
-        convertirlo en el manjar mas delicioso y nutritivo que pudiera existir.</p>
-      <p>Cuando
-        la miel estuvo lista, la abeja sintió una gran satisfacción al ver como su esfuerzo
-        se había convertido en algo valioso para la comunidad.
-        Y asi, feliz satisfecha,
-        se fue a dormir sabiendo que su miel alimentaria a la colmena y a otros animales
-        de la naturaleza.</p>
-    </section>
-
-  </main>
-
-  <footer>
-  </footer>
-
-</body>
-
+    <footer></footer>
+  </body>
 </html>
