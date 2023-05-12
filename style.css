@@ -139,3 +139,16 @@ body {
 }
 
 /* FOOTER */
+footer{
+  text-align: center;
+  background-color: #555555;
+  color: #ffffff;
+  height: 50px;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+footer a{
+  font-size: 20px;
+  color: #2980b9;
+}
