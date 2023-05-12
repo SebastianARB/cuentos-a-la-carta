@@ -1,23 +1,26 @@
+/* ESTILOS HTML */
 html {
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ESTILOS DE BODY */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #FFFFFF url(imagenes/Castillo-fondo.jpg) repeat;
+  background: #ffffff url(imagenes/Castillo-fondo.jpg) repeat;
   background-size: cover;
   color: #555555;
 }
 
-/* MENU DE NAVEGACION PRINCIPAL */
+/* MENU DE NAVEGACION */
 .navbar {
-  background-color: #2980B9;
+  background-color: #2980b9;
   text-align: center;
 }
 
+/* FORMATO MENU DE NAVEGACION */
 .menu-bar {
   display: flex;
   flex-wrap: wrap;
@@ -26,23 +29,29 @@ body {
   padding: 0;
 }
 
+/* PROPORCIONES DE MENU DE NAVEGACION */
 .menu-bar li {
   flex-grow: 1;
 }
 
+/* HOVER DE MENU DE NAVEGACION */
 .menu-bar li:hover {
   background-color: #684d4d52;
   cursor: pointer;
 }
 
+/* BOTON DE INICIAR SESION */
 .iniciarsesion {
-  background-color: #FF6348;
+  background-color: #ff6348;
 }
+
+/* HOVER DE BOTON DE INICIAR SESION */
 
 .iniciarsesion:hover {
   background-color: rgba(104, 77, 77, 0.32);
 }
 
+/* ESTILO DE MENU DE NAVEGACION */
 .menu-bar a {
   color: #fff;
   display: block;
@@ -53,27 +62,29 @@ body {
   border-right: 0;
 }
 
-@media screen and (max-width: 500px) {
-  .menu-bar {
+/* MEDIAQUERY TAMAÑO ADAPTATIVO DE MENU DE NAVEGACION */
+@media screen and (max-width: 600px) {
+  .menu-bar,
+  .perfil {
     flex-direction: column;
   }
 }
 
-
-
 /* INICIO */
+
+/* EXPLICACIÓN DE INICIO */
 
 .explicacion-inicio {
   border: solid;
-  width: 90%;
   max-width: 700px;
   margin: 0 auto;
-  padding: 15px;
-  margin-top: 10px;
+  padding: 25px;
+  margin-top: 35px;
   border-radius: 25px;
   background-color: #8ccec1;
 }
 
+/* TITULO DE EXPLICACIÓN DE INICIO */
 .explicacion-inicio h1 {
   text-align: center;
 }
@@ -83,269 +94,48 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin-top: 30px;
 }
 
-.escribircuento h2 {
-  font-size: 30px;
-  text-align: center;
-  color: #ffa500;
-  text-shadow: 1px 1px 0 black;
-  word-wrap: break-word;
-}
+/* PERFIL ESTILOS */
 
-
-.escribircuento label {
-  font-size: 1.875rem;
-  color: #ffa500;
-  text-shadow: 1px 1px 0 black;
-}
-
-.escribircuento input[type="text"],
-.escribircuento input[type="number"],
-.escribircuento select,
-.escribircuento textarea
- {
-  padding: 0.625rem;
-  margin: 0.625rem;
-  font-size: 1rem;
-  border-radius: 1.5625rem;
-  width: 100%;
-  border: 1px solid black;
-  max-width: 30rem;
-  text-align: center;
-  align-items: center;
-}
-.escribircuento #edad,
-.escribircuento #palabras {
-  margin-left: 0;
-  margin-right: 0;
-  width: 89.6%;
-  max-width: 28.5rem;
-}
-
-
-.escribircuento select:hover,
-.escribircuento input:hover,
-#contexto:hover,
-#prompt:hover {
-  box-shadow: 0 0 5px #81c700;
-}
-
-.escribircuento button[type="submit"] {
-  padding: 0.625rem;
-
-  font-size: 1.125rem;
-  border: none;
-  border-radius: 0.3125rem;
-  background-color: #2980B9;
-  border: 1px solid black;
-  color: white;
-  cursor: pointer;
-}
-
-.escribircuento button[type="submit"]:hover {
-  background-color: #1C639E;
-  box-shadow: 0 0 8px #81c700;
-}
-
-
-#contexto {
-  resize: none;
-  font-size: 25px;
-  padding: 20px;
-  border-radius:5px ;
-  width: 75%;
-  max-width: 28.5rem;
-}
-
-#contexto::-webkit-scrollbar {
-  width: 10px;
-}
-
-#contexto::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-
-#contexto::-webkit-scrollbar-thumb {
-  background-color: #81c700;
-  border-radius: 5px;
-}
-
-#contexto::-webkit-scrollbar-thumb:hover {
-  background-color: #81c70083;
-}
-
-
-#prompt,
-.prompt {
-  resize: none;
-  font-size: 25px;
-  padding: 20px;
-  border-radius:5px ;
-  width: 75%;
-  max-width: 28.5rem;
-  text-align: center;
-  margin: 5px;
-  /* display: none;  */
-  /* al comentar esta linea se muestra el prompt */
-}
-
-#prompt::-webkit-scrollbar {
-  width: 10px;
-}
-
-#prompt::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-
-#prompt::-webkit-scrollbar-thumb {
-  background-color: #81c700;
-  border-radius: 5px;
-}
-
-#prompt::-webkit-scrollbar-thumb:hover {
-  background-color: #81c70083;
-}
-
-
-
-
-
-
-
-
-
-/* Estilos para la sección de vista previa del cuento */
-
-
-#cuento-generado {
-  max-width: 80%;
-  min-height: 200px;
-  margin: 25px auto 0;
-  padding: 10px;
-  font-size: 24px;
-  line-height: 1.5;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 25px;
-  background-color: #FFF;
-  overflow-wrap: break-word;
-  margin-bottom: 100px;
-}
-
-#cuento-generado p {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-#cuento-generado::after {
-  content: attr(data-word-count);
-  visibility: hidden;
-}
-
-@media (min-width: 768px) {
-  #cuento-generado[data-word-count="0"] {
-    font-size: 1rem;
-  }
-
-  #cuento-generado[data-word-count="50"] {
-    font-size: 1.25rem;
-  }
-
-  #cuento-generado[data-word-count="100"] {
-    font-size: 1.5rem;
-  }
-
-  #cuento-generado[data-word-count="150"] {
-    font-size: 1.75rem;
-  }
-
-  #cuento-generado[data-word-count="200"] {
-    font-size: 2rem;
-  }
-}
-
-
-/* PERFIL PARAMETROS */
+/* CONTENEDOR DE PERFIL */
 .perfil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  position: fixed;
-  top: 50%;
+  margin-top: 40px;
+  position: absolute;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  text-align: center;
   padding: 20px;
-  max-width: 350px;
-  background-color: #ffffffc2;
+  background-color: #ffffffce;
   border-radius: 15%;
 }
-
-
-
+/* IMAGEN DE PERFIL */
 .imagen-perfil {
   width: 50%;
-  max-width: 200px;
   height: auto;
   border-radius: 100%;
   margin-bottom: 20px;
 }
-
-.name-user {
+/* NOMBRE DE USUARIO */
+.name-user,
+.email-user,
+.fecha-user {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-
-.email-user, .fecha-user {
-  margin: 0;
-  margin-bottom: 10px;
-}
-
+/* BOTON CERRAR SESION EN PERFIL */
 .btn-cerrar-sesion {
-  display: inline-block;
-  background-color: #2980B9;
-  color: #FFFFFF;
-  padding: 10px 20px;
+  background-color: #2980b9;
+  color: #ffffff;
+  padding: 10px 15px;
   border-radius: 5px;
   text-decoration: none;
-  margin-right: 10px;
 }
-
+/* HOVER BOTON CERRAR SESION */
 .btn-cerrar-sesion:hover {
   background-color: #154360;
 }
 
-@media screen and (max-width: 768px) {
-  .perfil {
-    margin: 5%;
-  }
-
-  .imagen-perfil {
-    width: 70%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 10px;
-  }
-}
-
 /* FOOTER */
-#page-wrapper {
-  min-height: calc(100vh - 100px); /* 100px es la altura del pie de página */
-}
-#footer {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f2f2f2;
-  padding: 10px;
-  text-align: center;
-}
-
-
-
