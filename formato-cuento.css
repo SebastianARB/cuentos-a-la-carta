@@ -24,6 +24,7 @@
   padding: 0;
   background-color: rgba(255, 255, 255, 0.62);
   border-radius: 25px;
+
 }
 /*  HOVER ESTILO DE ESTRELLAS */
 .clasificacion:hover {
@@ -40,6 +41,7 @@
   width: 90%;
   margin: 5px auto;
   text-align: center;
+  max-width: 700px;
 }
 /* SEPARACION DE CONTENEDOR CUENTO Y ESTRELLAS */
 .cuento form {

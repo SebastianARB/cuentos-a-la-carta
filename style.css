@@ -2,6 +2,8 @@
 html {
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
 }
 
 /* ESTILOS DE BODY */
@@ -12,6 +14,10 @@ body {
   background: #ffffff url(imagenes/Castillo-fondo.jpg) repeat;
   background-size: cover;
   color: #555555;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
 }
 
 /* MENU DE NAVEGACION */
@@ -140,17 +146,29 @@ body {
 }
 
 /* FOOTER */
+.content {
+  flex: 1 0 auto;
+  /* Agrega aquí tus estilos para el contenido */
+}
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
-  }
-  
-  .footer-content {
+  /* Agrega aquí tus estilos para el footer */
+}
+.footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  }
+}
+.footer-bottom {
+  margin-top: auto;
+  text-align: center;
+  border-top: 1px solid #fff;
+  margin-top: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  text-align: center;
+}
 
   .footer-content p{
     font-size: 19px;
@@ -184,10 +202,3 @@ footer {
     color: #2980b9
   }
   
-  .footer-bottom {
-  border-top: 1px solid #fff;
-  margin-top: 20px;
-  padding-top: 10px;
-  font-size: 14px;
-  text-align: center;
-  }
